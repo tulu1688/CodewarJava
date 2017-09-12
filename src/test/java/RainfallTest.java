@@ -1,5 +1,6 @@
-import static org.junit.Assert.*;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 
 public class RainfallTest {
@@ -45,13 +46,13 @@ public class RainfallTest {
                     "\n" +
                     "Lima:Jan 11.2,Feb 10.9,Mar 10.7,Apr 10.4,May 10.6,Jun 11.8,Jul 14.4,Aug 13.1,Sep 23.3,Oct 1.7,Nov 0.5,Dec 10.7";
 
-    public static String[] towns = new String [] {"Rome", "London", "Paris", "NY", "Vancouver", "Sydney", "Bangkok", "Tokyo",
+    public static String[] towns = new String[]{"Rome", "London", "Paris", "NY", "Vancouver", "Sydney", "Bangkok", "Tokyo",
             "Beijing", "Lima", "Montevideo", "Caracas", "Madrid", "Berlin"};
 
     private static void assertFuzzyEquals(double act, double exp) {
         boolean inrange = Math.abs(act - exp) <= 1e-2;
         if (inrange == false) {
-            System.out.println("abs(actual - expected) must be <= 1e-2. Expected was " + exp +", but got " + act);
+            System.out.println("abs(actual - expected) must be <= 1e-2. Expected was " + exp + ", but got " + act);
         }
         assertEquals(exp, act, 1e-2);
     }
@@ -62,6 +63,7 @@ public class RainfallTest {
         assertFuzzyEquals(Rainfall.mean("London", RainfallTest.data), 51.199999999999996);
         assertFuzzyEquals(Rainfall.mean("Beijing", RainfallTest.data), 52.416666666666664);
     }
+
     @Test
     public void test2() {
         System.out.println("Fixed Tests: variance data");

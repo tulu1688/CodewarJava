@@ -1,4 +1,5 @@
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 
@@ -7,11 +8,11 @@ public class DuplicateEncoderTest {
     public void test() {
         assertEquals(")()())()(()()(",
                 DuplicateEncoder.encode("Prespecialized"));
-        assertEquals("))))())))",DuplicateEncoder.encode("   ()(   "));
+        assertEquals("))))())))", DuplicateEncoder.encode("   ()(   "));
     }
 
     @Test
-    public void testMultipleCharacterOccur(){
+    public void testMultipleCharacterOccur() {
         assertEquals(true, DuplicateEncoder.isMultipleOccur("hahaha", 'a'));
         assertEquals(false, DuplicateEncoder.isMultipleOccur("khai", 'a'));
     }
