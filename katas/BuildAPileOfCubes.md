@@ -11,3 +11,28 @@ __Examples__
 findNb(1071225) --> 45
 findNb(91716553919377) --> -1
 ```
+
+## Clever code
+```
+public class ASum {
+  
+  public static long findNb(long m) {
+    long mm = 0, n = 0;
+    while (mm < m) mm += ++n * n * n;
+    return mm == m ? n : -1;
+  }  
+}
+```
+or
+```
+public class ASum {
+
+  public static long findNb(long m) {
+    long n = 0;
+    long cubeSize = 0;
+    for (; cubeSize < m; n++)
+      cubeSize += n * n * n;
+    return (cubeSize == m) ? n - 1 : -1;
+  }
+}
+```
