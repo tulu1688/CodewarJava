@@ -35,13 +35,11 @@ public class FindTheSmallest {
 
     private static int[] smallestIndex(List<Integer> digits, int startIndex) {
         List<Integer> subList = digits.subList(startIndex, digits.size());
-        if (digits.size() == 1)
+        if (subList.size() == 1)
             return null;
 
         int minVal = subList.stream().mapToInt(Integer::intValue).min().getAsInt();
         int index = subList.indexOf(new Integer(minVal));
-        while (index < subList.size() && minVal == subList.get(index + 1))
-            index ++;
 
         if (index == 0) {
             return smallestIndex(digits, startIndex + 1);
