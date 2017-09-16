@@ -24,5 +24,6 @@ public class Main {
         ProdConsFibNumbers.productFib(4895);
         ValidBraces.isValid("()");
         SudokuValidator.check(sudoku);
+        System.out.println(Runes.isValidExpression("-1--2=1"));
     }
 }
