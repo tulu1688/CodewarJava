@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 /**
  * Created by trankhai on 9/11/17.
  */
@@ -24,6 +26,7 @@ public class Main {
         ProdConsFibNumbers.productFib(4895);
         ValidBraces.isValid("()");
         SudokuValidator.check(sudoku);
-        System.out.println(Runes.isValidExpression("-1--2=1"));
+        Fusc.fusc(BigInteger.valueOf(2).pow(1000));
+        Runes.isValidExpression("-1--2=1");
     }
 }
