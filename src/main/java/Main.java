@@ -53,5 +53,6 @@ public class Main {
         Runes.isValidExpression("-1--2=1");
         BattleShips.damagedOrSunk(board, attacks);
         LongestSlideDown.longestSlideDown(pyramid);
+        RomanNumeralsEncoder.convert(2000);
     }
 }

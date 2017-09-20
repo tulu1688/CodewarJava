@@ -1,4 +1,4 @@
-## (Pyramid Slide Down)[https://www.codewars.com/kata/551f23362ff852e2ab000037/java]
+## [Pyramid Slide Down](https://www.codewars.com/kata/551f23362ff852e2ab000037/java)
 
 Pyramids are amazing! Both in architectural and mathematical sense. If you have a computer, you can mess with pyramids even if you are not in Egypt at the time. For example, let's consider the following problem. Imagine that you have a plane pyramid built of numbers, like this one here:
 
