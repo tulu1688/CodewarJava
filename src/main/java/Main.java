@@ -54,5 +54,6 @@ public class Main {
         BattleShips.damagedOrSunk(board, attacks);
         LongestSlideDown.longestSlideDown(pyramid);
         RomanNumeralsEncoder.convert(2000);
+        RPNCalculator.evaluate("1 2 + 4 *");
     }
 }
