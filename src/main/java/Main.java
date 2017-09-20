@@ -16,6 +16,12 @@ public class Main {
             {3, 4, 5, 2, 8, 6, 1, 7, 9}
     };
 
+    static int[][] board   = new int[][] {new int[] {3, 0, 1},
+            new int[] {3, 0, 1},
+            new int[] {0, 2, 1},
+            new int[] {0, 2, 0}};
+    static int[][] attacks = new int[][] {new int[] {2,1},new int[] {2,2},new int[] {3,2},new int[] {3,3}};
+
     public static void main(String[] args) {
         BuildAPileOfCubes.findNb(1000);
         DuplicateEncoder.encode("  sdllwwwffeekksf");
@@ -28,5 +34,6 @@ public class Main {
         SudokuValidator.check(sudoku);
         Fusc.fusc(BigInteger.valueOf(2).pow(1000));
         Runes.isValidExpression("-1--2=1");
+        BattleShips.damagedOrSunk(board, attacks);
     }
 }

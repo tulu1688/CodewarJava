@@ -3,7 +3,6 @@ import java.util.stream.IntStream;
 
 public class SudokuValidator {
     public static boolean check(int[][] sudoku) {
-        System.out.println(sudoku[8].length);
         // Vertical check
         for (int i=0;i<9;i++)
             if (!isValidSudokuArray(sudoku[i]))
