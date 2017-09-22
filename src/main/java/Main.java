@@ -55,5 +55,6 @@ public class Main {
         LongestSlideDown.longestSlideDown(pyramid);
         RomanNumeralsEncoder.convert(2000);
         RPNCalculator.evaluate("1 2 + 4 *");
+        LongestCommonSubsequence.lcs("abc", "ac");
     }
 }
