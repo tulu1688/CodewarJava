@@ -56,5 +56,6 @@ public class Main {
         RomanNumeralsEncoder.convert(2000);
         RPNCalculator.evaluate("1 2 + 4 *");
         LongestCommonSubsequence.lcs("abc", "ac");
+        System.out.println(Integer.toBinaryString(12345678));
     }
 }
